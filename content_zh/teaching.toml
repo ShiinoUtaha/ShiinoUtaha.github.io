@@ -3,8 +3,22 @@ title = "教学"
 description = "我曾参与授课或助教的课程。"
 
 [[items]]
-title = "示例课程"
+title = "国际贸易"
 subtitle = "助教"
-date = "2024"
+date = "Fall 2023 & Fall 2024"
 content = "课程内容与职责简介。"
 tags = ["本科生", "计算机"]
+
+[[items]]
+title = "货币经济学"
+subtitle = "助教"
+date = "Spring 2024"
+content = "课程内容与职责简介。"
+tags = ["本科生", "计算机"]
+
+[[items]]
+title = "高级金融理论"
+subtitle = "助教"
+date = "Fall 2024 & Spring 2025"
+content = "课程内容与职责简介。"
+tags = ["研究生", "金融学"]

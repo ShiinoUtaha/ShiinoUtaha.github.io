@@ -1,29 +1,29 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "Wei Liang"
+description = "PhD student at Central University of Finance and Economics."
 favicon = "/favicon.svg"
 last_updated = "November 18, 2025"
 
 [author]
-name = "Jiale Liu"
+name = "Wei Liang"
 title = "PhD Student"
-institution = "University of Example"
+institution = "Central University of Finance and Economics"
 avatar = "/bio.jpg"
 
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "john.doe@example.com"
-location = "City, Country"
-location_url = "https://maps.google.com"
+email = "w3liang2@foxmail.com"
+location = "Beijing, China"
+location_url = "https://maps.app.goo.gl/kYp6eBpqKTZAB4bJ6"
 location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
+  "No.39 Xueyuan South Road,",
+  "Haidian District, Beijing, P.R.China"
 ]
-google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+google_scholar = ""
+orcid = ""
+github = "https://github.com/ShiinoUtaha"
+linkedin = ""
 
 [features]
 # Show a like button on the about page
