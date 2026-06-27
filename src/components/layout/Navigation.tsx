@@ -219,6 +219,31 @@ export default function Navigation({
                       {effectiveItems.map((item) => {
                         const isActive = isDesktopItemActive(item);
                         const href = getDesktopItemHref(item);
+                        const className = cn(
+                          'relative px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
+                          isActive
+                            ? 'text-primary'
+                            : hoveredHref === href
+                              ? 'text-primary'
+                              : 'text-neutral-600'
+                        );
+
+                        // External / asset links (e.g. CV PDF) open in a new tab.
+                        if (item.type === 'link') {
+                          return (
+                            <a
+                              key={item.target}
+                              href={item.href}
+                              data-nav-href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onMouseEnter={() => setHoveredHref(href)}
+                              className={className}
+                            >
+                              {item.title}
+                            </a>
+                          );
+                        }
 
                         return (
                           <Link
@@ -228,14 +253,7 @@ export default function Navigation({
                             prefetch={true}
                             onClick={() => enableOnePageMode && setActiveHash(`#${item.target}`)}
                             onMouseEnter={() => setHoveredHref(href)}
-                            className={cn(
-                              'relative px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
-                              isActive
-                                ? 'text-primary'
-                                : hoveredHref === href
-                                  ? 'text-primary'
-                                  : 'text-neutral-600'
-                            )}
+                            className={className}
                           >
                             {item.title}
                           </Link>
@@ -290,6 +308,13 @@ export default function Navigation({
                         ? (item.href === '/' ? '/' : `/#${item.target}`)
                         : item.href;
 
+                      const mobileClassName = cn(
+                        'block px-3 py-2 rounded-md text-base font-medium transition-all duration-200',
+                        isActive
+                          ? 'text-primary bg-accent/10 border-l-4 border-accent'
+                          : 'text-neutral-600 hover:text-primary hover:bg-neutral-50'
+                      );
+
                       return (
                         <motion.div
                           key={item.target}
@@ -297,20 +322,28 @@ export default function Navigation({
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: index * 0.1 }}
                         >
-                          <Disclosure.Button
-                            as={Link}
-                            href={href}
-                            prefetch={true}
-                            onClick={() => enableOnePageMode && setActiveHash(item.href === '/' ? '' : `#${item.target}`)}
-                            className={cn(
-                              'block px-3 py-2 rounded-md text-base font-medium transition-all duration-200',
-                              isActive
-                                ? 'text-primary bg-accent/10 border-l-4 border-accent'
-                                : 'text-neutral-600 hover:text-primary hover:bg-neutral-50'
-                            )}
-                          >
-                            {item.title}
-                          </Disclosure.Button>
+                          {item.type === 'link' ? (
+                            // External / asset links (e.g. CV PDF) open in a new tab.
+                            <Disclosure.Button
+                              as="a"
+                              href={item.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={mobileClassName}
+                            >
+                              {item.title}
+                            </Disclosure.Button>
+                          ) : (
+                            <Disclosure.Button
+                              as={Link}
+                              href={href}
+                              prefetch={true}
+                              onClick={() => enableOnePageMode && setActiveHash(item.href === '/' ? '' : `#${item.target}`)}
+                              className={mobileClassName}
+                            >
+                              {item.title}
+                            </Disclosure.Button>
+                          )}
                         </motion.div>
                       );
                     })}

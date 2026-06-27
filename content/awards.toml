@@ -3,25 +3,31 @@ title = "Awards"
 description = "Honors and awards I have received."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2025"
-content = "Description of the award."
+title = "First-Class Academic Scholarship"
+subtitle = "Central University of Finance and Economics"
+date = "2025.9"
+content = ""
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2024"
-content = "Description of the award."
+title = "National Scholarship"
+subtitle = "Ministry of Education, China"
+date = "2024.11"
+content = ""
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2023"
-content = "Description of the award."
+title = "First-Class Entrance Scholarship"
+subtitle = "Central University of Finance and Economics"
+date = "2024.9"
+content = ""
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2022"
-content = "Description of the award."
+title = "First-Class Academic Scholarship"
+subtitle = "Central University of Finance and Economics"
+date = "2023.9"
+content = ""
+
+[[items]]
+title = "First-Class Entrance Scholarship"
+subtitle = "Central University of Finance and Economics"
+date = "2022.9"
+content = ""

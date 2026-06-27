@@ -21,9 +21,9 @@ title = "Publications"
 filter = "selected"
 limit = 5
 
-[[sections]]
-id = "news"
-type = "list"
-title = "News"
-source = "news.toml"
+# [[sections]]
+# id = "news"
+# type = "list"
+# title = "News"
+# source = "news.toml"
 

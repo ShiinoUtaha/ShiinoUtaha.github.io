@@ -3,8 +3,22 @@ title = "Teaching"
 description = "Courses I have taught or assisted with."
 
 [[items]]
-title = "Example Course"
+title = "International Trade"
 subtitle = "Teaching Assistant"
-date = "2024"
-content = "Description of the course and responsibilities. Content of this course can be found [here](https://example.com)."
-tags = ["Undergraduate", "CS"]
+date = "Fall 2023 & Fall 2024"
+content = "This course is an elective for both undergraduate and graduate students, and I am responsible for advising approximately 60 undergraduates and 30 graduate students. Each semester, I lead 1–2 problem-solving sessions, provide tutoring and answer students’ questions outside of class, and assist the course instructor in grading assignments and final exams."
+tags = ["Undergraduate", "Graduate", "International Trade"]
+
+[[items]]
+title = "Monetary Economics"
+subtitle = "Teaching Assistant"
+date = "Spring 2024"
+content = "This course is an elective for undergraduates, and I am responsible for mentoring approximately 60 undergraduates. Each semester, I lead 1–2 problem-solving sessions, provide tutoring and answer students’ questions outside of class, and assist the course instructor in grading assignments and final exams."
+tags = ["Undergraduate", "Monetary Economics"]
+
+[[items]]
+title = "Advanced Financial Economics"
+subtitle = "Teaching Assistant"
+date = "Fall 2024 & Spring 2025"
+content = "This course is a required graduate course, and I am responsible for supervising approximately 30 graduate students. Each semester, I lead 2–3 problem-solving sessions and provide tutoring and Q&A sessions for students outside of class hours. I also collaborate with the course instructor to design course assessment content and evaluation plans, and assist in grading assignments and final exam papers."
+tags = ["Graduate", "Finance"]

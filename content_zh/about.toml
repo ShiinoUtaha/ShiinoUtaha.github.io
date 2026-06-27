@@ -21,8 +21,8 @@ title = "发表论文"
 filter = "selected"
 limit = 5
 
-[[sections]]
-id = "news"
-type = "list"
-title = "动态"
-source = "news.toml"
+# [[sections]]
+# id = "news"
+# type = "list"
+# title = "动态"
+# source = "news.toml"

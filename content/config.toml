@@ -2,7 +2,8 @@
 title = "Wei Liang"
 description = "PhD student at Central University of Finance and Economics."
 favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+# last_updated is auto-set to the build date (see next.config.ts / Footer.tsx).
+# Set a value here only if you want to override it manually.
 
 [author]
 name = "Wei Liang"
@@ -24,6 +25,7 @@ google_scholar = ""
 orcid = ""
 github = "https://github.com/ShiinoUtaha"
 linkedin = ""
+repec = "https://ideas.repec.org/f/pli1620.html"
 
 [features]
 # Show a like button on the about page
@@ -72,14 +74,14 @@ type = "page"
 target = "awards"
 href = "/awards"
 
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
+# [[navigation]]
+# title = "Services"
+# type = "page"
+# target = "services"
+# href = "/services"
 
 [[navigation]]
 title = "CV"
-type = "page"
+type = "link"
 target = "cv"
-href = "/cv"
+href = "/cv-en.pdf"

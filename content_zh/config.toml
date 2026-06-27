@@ -1,7 +1,7 @@
 [site]
 title = "梁炜"
 description = "中央财经大学大学博士生个人主页。"
-last_updated = "2026年6月25日"
+# last_updated 自动取构建日期（见 next.config.ts / Footer.tsx），如需手动覆盖再填写。
 
 [author]
 name = "梁炜"
@@ -11,7 +11,8 @@ institution = "中央财经大学"
 [social]
 location = "北京，中国"
 location_details = [
-  "北京市海淀区北下关街道学院南路39号中央财经大学"
+  "北京市海淀区北下关街道",
+  "学院南路 39 号中央财经大学"
 ]
 
 [[navigation]]
@@ -38,14 +39,14 @@ type = "page"
 target = "awards"
 href = "/awards"
 
-[[navigation]]
-title = "服务"
-type = "page"
-target = "services"
-href = "/services"
+# [[navigation]]
+# title = "服务"
+# type = "page"
+# target = "services"
+# href = "/services"
 
 [[navigation]]
 title = "简历"
-type = "page"
+type = "link"
 target = "cv"
-href = "/cv"
+href = "/cv-zh.pdf"
