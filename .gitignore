@@ -42,3 +42,6 @@ next-env.d.ts
 
 # wrangler
 .wrangler
+
+# LaTeX CV source (the compiled public/cv-en.pdf is committed instead)
+/resume/
